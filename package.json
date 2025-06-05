@@ -1,0 +1,36 @@
+{
+  "name": "stellarasm-syntax",
+  "displayName": "StellarASM Syntax",
+  "description": "StellarASM Syntax Highlighting for Visual Studio Code",
+  "version": "0.1.0",
+  "publisher": "PercyGame",
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PercyGame/stellarasm-syntax"
+},
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "stellarasm",
+        "aliases": ["StellarASM", "stellarasm"],
+        "extensions": [".stel", ".sasm"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "stellarasm",
+        "scopeName": "source.stellarasm",
+        "path": "./syntaxes/stellarasm.tmLanguage.json"
+      }
+    ]
+  }
+}
